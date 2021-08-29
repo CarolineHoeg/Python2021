@@ -143,24 +143,6 @@ dmypy.json
 
 # End of https://www.gitignore.io/api/python,jupyternotebooks,visualstudiocode
 
-**/client_secret.json
-**/api_keys.py
-**/pygraphviz-1.5/
-**/token.pickle
-
-101_ObjectCategories.tar.gz
-101_ObjectCategories/
-aleph.gutenberg.org/
-twitter_combined.txt.gz
-__pycache__/
-**/*.txt
-**/*.csv
-**/solutions/
-**/api_keys*
-
-# handin template
-**/python_handin_template
-
 # remove the build.log
 build.log
 **/.local/
