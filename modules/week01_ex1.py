@@ -35,7 +35,7 @@ def write_to_file(output_file, *strings):
         for string in strings:
             file_object.write('%s\n' % string)
 
-def read_file(input_file):
+def read_csv(input_file):
     """Takes a csv input file and 
     reads each row into a list 
     """
