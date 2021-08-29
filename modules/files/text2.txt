@@ -1,0 +1,7 @@
+Customer info
+Emails:
+a@hotmail.com
+b@gmail
+Phone:
+45566788
+32654132
