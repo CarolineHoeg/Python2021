@@ -1,0 +1,17 @@
+stud_name,course_name,teacher,gender,ects,classroom,grade,img_url
+Jessica,PE,Bob,male,50,C-102,4,picture0.jpg
+Jessica,History,Rex,male,30,C-102,2,picture0.jpg
+Jessica,English,Susan,male,10,C-265,2,picture0.jpg
+Jessica,Math,Anne,male,40,C-265,4,picture0.jpg
+Billy,Security,Jane,female,50,C-105,4,picture1.jpg
+Billy,Programming,Billy,female,40,C-162,4,picture1.jpg
+Billy,History,Josephine,female,20,C-102,-3,picture1.jpg
+Rex,English,Susan,male,40,C-162,4,picture2.jpg
+Rex,Programming,Jessica,male,50,C-162,12,picture2.jpg
+Josephine,Security,Anne,female,10,C-265,10,picture3.jpg
+Josephine,History,Jessica,female,30,C-162,10,picture3.jpg
+Susan,English,Jessica,male,50,C-265,0,picture4.jpg
+Susan,Math,Anne,male,10,C-265,2,picture4.jpg
+Susan,History,George,male,10,C-162,7,picture4.jpg
+Susan,Security,Jack,male,50,C-105,-3,picture4.jpg
+Susan,Programming,Susan,male,20,C-102,12,picture4.jpg
