@@ -21,7 +21,7 @@ class Student():
         return 'Student(%r, %r, %r, %r)' % (self.name, self.gender, self.data_sheet, self.image_url)
 
     def __str__(self):
-        return '{name} is a {gender} student. {data_sheet}. Image URL: {url}'.format(name=self.name, gender=self.gender, data_sheet=self.data_sheet, url=self.image_url)
+        return '%r is a %r student. %r. Image URL: %r' % (self.name, self.gender, self.data_sheet, self.image_url)
 
 
 class DataSheet():
@@ -43,7 +43,7 @@ class DataSheet():
         return 'Datasheet(%r)' % (self.courses)
 
     def __str__(self):
-        return 'Courses attended: {courses}'.format(courses=self.courses)
+        return 'Courses attended: %r' % (self.courses)
 
 
 class Course():
@@ -61,4 +61,4 @@ class Course():
         return 'Course(%r, %r, %r, %r, %r)' % (self.name, self.classroom, self.teacher, self.ECTS, self.grade)
 
     def __str__(self):
-        return '{name} in {classroom} with {teacher}. ETCs for the course: {ETCS}. Grade: {grade}'.format(name=self.name,classroom=self.classroom, teacher=self.teacher, ECTS=self.ECTS, grade=self.grade)
+        return '%r in %r with %r. ETCs for the course: %r. Grade: %r' % (self.name, self.classroom, self.teacher, self.ECTS, self.grade)

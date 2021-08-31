@@ -1,31 +1,29 @@
 stud_name,course_name,teacher,gender,ects,classroom,grade,img_url
-Bob,English,Josephine,female,10,C-102,10,picture0.jpg
-Bob,Programming,Bob,female,40,C-162,12,picture0.jpg
-Bob,Security,Anne,female,30,C-105,7,picture0.jpg
-Bob,PE,Anne,female,30,C-102,10,picture0.jpg
-Anne,Security,Rex,other,40,C-162,12,picture1.jpg
-Anne,History,Susan,other,20,C-105,-3,picture1.jpg
-Jane,Security,Bob,other,40,C-105,10,picture2.jpg
-Jane,Programming,Rex,other,30,C-162,12,picture2.jpg
-George,PE,John,male,10,C-265,10,picture3.jpg
-George,Programming,Jack,male,50,C-102,10,picture3.jpg
-George,Math,Rex,male,30,C-265,7,picture3.jpg
-George,Security,George,male,10,C-105,7,picture3.jpg
-Anne,PE,Jessica,female,30,C-265,0,picture4.jpg
-Anne,English,Bob,female,30,C-105,0,picture4.jpg
-Anne,Security,Josephine,female,10,C-265,10,picture4.jpg
-Anne,History,Billy,female,30,C-265,2,picture4.jpg
-Rex,English,Jane,female,20,C-265,4,picture5.jpg
-Rex,Math,Jane,female,40,C-102,-3,picture5.jpg
-Rex,Security,George,female,30,C-265,4,picture5.jpg
-Rex,Programming,John,female,20,C-102,10,picture5.jpg
-Rex,PE,Jessica,female,10,C-105,4,picture5.jpg
-Billy,Programming,George,male,30,C-102,-3,picture6.jpg
-John,English,Anne,male,50,C-265,-3,picture7.jpg
-John,Security,Rex,male,20,C-162,4,picture7.jpg
-John,Math,Bob,male,50,C-162,7,picture7.jpg
-Jane,History,Anne,female,30,C-162,7,picture8.jpg
-Jane,PE,John,female,20,C-162,2,picture8.jpg
-Jane,Security,Billy,female,30,C-162,0,picture8.jpg
-Jane,English,Jack,female,40,C-102,12,picture8.jpg
-Jack,Security,George,other,10,C-162,12,picture9.jpg
+Susan Johnson,PE,Susan,other,10,C-102,12,picture0.jpg
+Jack Doe,English,Rex,other,30,C-265,0,picture1.jpg
+Jack Doe,Programming,Anne,other,10,C-162,2,picture1.jpg
+Jack Doe,History,John,other,50,C-265,4,picture1.jpg
+Anne Kurt,History,Josephine,female,50,C-162,0,picture2.jpg
+Anne Kurt,PE,John,female,10,C-102,0,picture2.jpg
+Anne Kurt,Security,George,female,50,C-102,-3,picture2.jpg
+Anne Kurt,Math,Billy,female,10,C-102,4,picture2.jpg
+Susan Black,Programming,Jessica,female,10,C-265,10,picture3.jpg
+Susan Black,Math,Bob,female,20,C-102,4,picture3.jpg
+Jane Kurt,Programming,George,female,40,C-105,-3,picture4.jpg
+Jane Kurt,English,Jessica,female,30,C-105,10,picture4.jpg
+Jane Kurt,PE,Josephine,female,10,C-105,-3,picture4.jpg
+Jane Kurt,Math,Rex,female,10,C-102,10,picture4.jpg
+Billy Smith,Security,George,male,10,C-162,-3,picture5.jpg
+Billy Smith,English,Jack,male,20,C-102,2,picture5.jpg
+John Kurt,Math,John,female,30,C-265,0,picture6.jpg
+Billy Kurt,Math,Rex,female,30,C-102,-3,picture7.jpg
+Billy Kurt,Programming,Rex,female,20,C-162,2,picture7.jpg
+Billy Kurt,History,Anne,female,10,C-102,0,picture7.jpg
+Billy Kurt,PE,John,female,10,C-265,0,picture7.jpg
+Billy Kurt,English,Jessica,female,20,C-102,10,picture7.jpg
+Jack Jensen,Programming,Jessica,female,50,C-105,-3,picture8.jpg
+Rex Doe,History,George,female,40,C-102,0,picture9.jpg
+Rex Doe,PE,Billy,female,20,C-105,12,picture9.jpg
+Rex Doe,English,Billy,female,30,C-162,12,picture9.jpg
+Rex Doe,Programming,Susan,female,10,C-102,-3,picture9.jpg
+Rex Doe,Math,George,female,30,C-105,12,picture9.jpg
