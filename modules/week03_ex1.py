@@ -15,7 +15,11 @@ class Student():
     
     def get_study_progression(self):
         """Gets the student's study progression in percentage (%)"""
-        return (self.data_sheet.get_all_ects()/150)*100
+        return (self.data_sheet.get_all_ects() / 150) * 100
+    
+    def get_courses(self):
+        """Gets the students courses in a list"""
+        return self.data_sheet.courses
 
     def __repr__(self):
         return 'Student(%r, %r, %r, %r)' % (self.name, self.gender, self.data_sheet, self.image_url)
