@@ -24,10 +24,9 @@ def get_all_file_names(folder_path,out='output.txt'):
     """
     directory = os.walk(folder_path)
     with open(out, 'w') as file_object:
-        for root, files in directory:
+        for files in directory:
             for name in files:
-                print(os.path.join(root, name))
-                file_object.write("%s\n" % os.path.join(root, name))
+                file_object.write("%s\n" % name)
 
 def print_line_one(file_names):
     """Takes a list of filenames and 

@@ -1,6 +1,8 @@
 import argparse
 import csv
 
+# the with statement closes the file after, so we don't have to do it manually
+
 def print_file_content(file):
     """Prints a file's content 
     
