@@ -59,7 +59,7 @@ class TextComparer():
         """Returns average number of vowels in the words of the text"""
         vowel_count = 0
         word_count = 0
-        for word in text:
+        for word in text.split():
             vowel_count += sum(x in 'aeiou' for x in word.lower()) 
             word_count += 1
         return vowel_count / word_count
