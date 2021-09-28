@@ -9,10 +9,12 @@ class NotFoundException(Exception):
 class TextComparer():
     
     def __init__(self, url_list):
+        """Initiates the TextComparer with a list of URLs and a file names list"""
         self.url_list = url_list
         self.file_names = []
     
     def download(self, url, file_name):
+        """Stores the file on disk and raises NotFoundException when the URL returns 404"""
         try:
             r = requests.get(url)
             if (r.status_code == 404):
@@ -25,20 +27,23 @@ class TextComparer():
             print("The site you were looking for wasn't found")
     
     def multi_download(self):
+        """Uses threads to download multiple URLs as text and stores filenames on a property of the TextComparer class object"""
         i = 0
         max_workers = multiprocessing.cpu_count()
         with ThreadPoolExecutor(max_workers) as exc:
             for url in self.url_list:
                 file_name = 'download' + str(i) + '.txt'
                 self.file_names.append(file_name)
-                exc.submit(self.download, url, file_name)
+                #exc.submit(self.download, url, file_name)
                 i += 1
     
     def __iter__(self):
+        """Returns an iterator"""
         self.current_id = 0
         return self
         
     def __next__(self):
+        """Returns the next filename (and stops when there are no more)"""
         if self.current_id >= len(self.url_list):
             raise StopIteration
         else:
@@ -46,11 +51,20 @@ class TextComparer():
             return self.file_names[self.current_id - 1]
 
     def url_list_generator(self):
+        """Returns a generator to loop through the URLs"""
         for url in self.url_list:
             yield url
 
     def avg_vowels(self, text):
-        return 0
+        """Returns average number of vowels in the words of the text"""
+        vowel_count = 0
+        word_count = 0
+        for word in text:
+            vowel_count += sum(x in 'aeiou' for x in word.lower()) 
+            word_count += 1
+        return vowel_count / word_count
     
     def hardest_read(self):
-        return 0
+        """Reads all text from files in filenames and returns the filename of the text with the highest vowel score"""
+        highest_vowel_count = ''
+        return highest_vowel_count
