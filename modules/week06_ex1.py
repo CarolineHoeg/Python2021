@@ -1,5 +1,6 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor
 import multiprocessing
 
 class NotFoundException(Exception):
@@ -34,12 +35,12 @@ class TextComparer():
             for url in self.url_list:
                 file_name = 'download' + str(i) + '.txt'
                 self.file_names.append(file_name)
-                #exc.submit(self.download, url, file_name)
+                exc.submit(self.download, url, file_name)
                 i += 1
     
     def __iter__(self):
         """Returns an iterator"""
-        self.current_id = 0
+        self.current_id = -1
         return self
         
     def __next__(self):
@@ -48,7 +49,7 @@ class TextComparer():
             raise StopIteration
         else:
             self.current_id += 1
-            return self.file_names[self.current_id - 1]
+            return self.file_names[self.current_id]
 
     def url_list_generator(self):
         """Returns a generator to loop through the URLs"""
@@ -62,9 +63,15 @@ class TextComparer():
         for word in text.split():
             vowel_count += sum(x in 'aeiou' for x in word.lower()) 
             word_count += 1
-        return vowel_count / word_count
+        return round(vowel_count / word_count, 2)
     
     def hardest_read(self):
-        """Reads all text from files in filenames and returns the filename of the text with the highest vowel score"""
-        highest_vowel_count = ''
-        return highest_vowel_count
+        """Reads all text from files in filenames and returns a dictionary with the filename and the average number of vowels"""
+        files_and_avg_vowels = {}
+        max_workers = multiprocessing.cpu_count()
+        for file_name in self.file_names:
+            with ProcessPoolExecutor(max_workers) as exc:
+                with open('./outputs/' + file_name) as file:
+                    avg_vowels = next(exc.map(self.avg_vowels, file))
+                    files_and_avg_vowels.setdefault(file_name, avg_vowels)
+        return files_and_avg_vowels
